@@ -1,0 +1,111 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    padding: 32px 24px;
+    max-width: 350px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+.generator-box {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.output-group {
+    display: flex;
+    gap: 8px;
+}
+
+#passwordOutput {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f7f7f7;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+#copyBtn {
+    padding: 0 16px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#copyBtn:hover {
+    background: #5a67d8;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options label {
+    font-size: 1rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#length {
+    width: 60px;
+    margin-left: 8px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.generate {
+    margin-top: 10px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    background: #764ba2;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.generate:hover {
+    background: #5a3c8a;
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 18px 6px;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .generate {
+        font-size: 1rem;
+    }
+}
